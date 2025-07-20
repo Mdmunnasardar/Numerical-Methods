@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 float f(float x) {
-   float f = pow(x, 3) + x - 1;
-   return f;
+   return pow(x, 3) + x - 1;
 }
 void secant(float x1, float x2, float E) {
    float n = 0, xm, x0, c;
