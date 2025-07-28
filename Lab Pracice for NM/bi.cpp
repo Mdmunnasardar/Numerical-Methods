@@ -6,29 +6,42 @@ double func(double x)
 {
     return x * x * x - x - 11;
 }
- void bisection(double a, double b){
-    if(func(a)*func(b)>=0){
-        cout<<"You are not assume a and b ";
+
+void bisection(double a, double b)
+{
+    if (func(a) * func(b) >= 0) {
+        cout << "Incorrect initial interval. f(a) and f(b) must have opposite signs.\n";
         return;
     }
 
-    double c=a;
-    while((b-a)>=EPSILON){
-        c=(a+b)/2;
-        
-        if(func(c)==0.0)
-        break;
+    double c = a;
+    cout << fixed << setprecision(4);
 
-        else if (func(c)*func(a)<0)
-            b=c;
+    while ((b - a) >= EPSILON) {
+        c = (a + b) / 2;
+
+        if (abs(func(c)) < EPSILON)
+            break;
+
+        else if (func(c) * func(a) < 0)
+            b = c;
         else
-            a=c;
-        } 
-        cout<<"The value of root is : "<<c;
-}
-    int main(){
-        double a=2,b=3;
-        bisection(a,b);
-        return 0;
+            a = c;
     }
- 
+
+    cout << "The value of the root is: " << c << endl;
+}
+
+int main()
+{
+    double a, b;
+
+    cout << "Enter the value of a: ";
+    cin >> a;
+
+    cout << "Enter the value of b: ";
+    cin >> b;
+
+    bisection(a, b);
+    return 0;
+}
