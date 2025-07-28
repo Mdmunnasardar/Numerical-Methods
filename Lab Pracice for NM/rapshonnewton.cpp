@@ -17,7 +17,7 @@ void newtonRaphson(double x) {
         cout << "x = " << x << ", f(x) = " << func(x) << ", h = " << h << endl;
         x = x - h;
     }
-    cout << "The value of the root is : " << x << endl;
+    cout << "The value of  root is : " << x << endl;
 }
 
 int main() {
