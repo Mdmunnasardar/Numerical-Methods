@@ -20,7 +20,7 @@ void secant(float x1, float x2, float E) {
       cout << "Root of the given equation=" << x0 << endl;
       cout << "No. of iterations = " << n << endl;
    } else
-   cout << "Can not find a root in the given inteval";
+   cout << "Can not find a  the given inteval";
 }
 int main() {
    // initializing the values
