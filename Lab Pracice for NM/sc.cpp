@@ -32,9 +32,8 @@
     }
 
     int main(){
-        
-    // initializing the values
-    float x1 = 0, x2 = 1, e = 0.0001;
+      
+    float x1 = 0, x2 = 1, e = 0.000001;
     secant(x1, x2, e);
     return 0;
     }
