@@ -10,7 +10,7 @@ double func(double x)
 void bisection(double a, double b)
 {
     if (func(a) * func(b) >= 0) {
-        cout << "Incorrect initial interval. f(a) and f(b) must have opposite signs.\n";
+        cout << "Incorrect initia. f(a) and f(b) must have opposite signs.\n";
         return;
     }
 
