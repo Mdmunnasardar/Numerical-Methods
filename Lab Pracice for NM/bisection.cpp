@@ -2,9 +2,7 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-#define EPSILON 0.001
-
-// An example function whose solution is determined using
+#define EPSILON 0.0001
 // Bisection Method. The function is x^3 - x^2 + 2
 double func(double x)
 {
